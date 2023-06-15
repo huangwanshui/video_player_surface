@@ -18,15 +18,15 @@ class _VideoPlayPageState extends State<VideoPlayPage> {
       appBar: AppBar(
         title: const Text('play'),
       ),
-      body: LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints boxConstraints) {
-          return Container(
-            color: Colors.black,
-            width: boxConstraints.maxWidth,
-            height: boxConstraints.maxWidth * 9 / 16,
+      body: Container(
+        color: Colors.redAccent,
+        child: Center(
+          child: OverflowBox(
+            maxWidth: MediaQuery.of(context).size.width + 1,
+            maxHeight: 200,
             child: _surface(),
-          );
-        },
+          ),
+        ),
       ),
     );
   }
