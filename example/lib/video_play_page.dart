@@ -17,14 +17,27 @@ class _VideoPlayPageState extends State<VideoPlayPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('play'),
+        actions: [
+          InkWell(
+            child: Icon(Icons.abc),
+            onTap: () {
+
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                return Scaffold(
+                  body: Container(color: Colors.blue,),
+                );
+              }));
+            },
+          )
+        ],
       ),
       body: Container(
-        color: Colors.redAccent,
+        color: Colors.black,
         child: Center(
           child: OverflowBox(
             maxWidth: MediaQuery.of(context).size.width + 1,
             maxHeight: 200,
-            child: _surface(),
+            child: _vd(),
           ),
         ),
       ),

@@ -6,6 +6,18 @@
         android:label="video_player_surface_example"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data
+            android:name="APP_UUID"
+            android:value="e0534f3240274897821a126be19b6d46" />
+        <meta-data
+            android:name="APP_KEY"
+            android:value="0621ef206a1d4cafbe0c5545c3882ea8" />
+        <meta-data
+            android:name="APP_SECRET"
+            android:value="90f8bc17be2a425db6068c749dee4f5d" />
+        <meta-data
+            android:name="APP_MOVECARD"
+            android:value="2" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
